@@ -5,4 +5,5 @@ apt-get install -y vim tmux python3-venv libgoogle-perftools4 libtcmalloc-minima
 cd /workspace
 adduser --disabled-password --gecos "" u
 chown u:u -R /workspace
-tmux
+
+tmux new-session -d -s mysession
