@@ -12,4 +12,4 @@ cd /workspace/stable-diffusion-webui/extensions
 git clone https://github.com/MMqd/kandinsky-for-automatic1111
 
 tmux kill-session -t mysession 2>/dev/null
-tmux new-session -d -s mysession 'bash -c "https://github.com/MMqd/kandinsky-for-automatic1111/webui.sh --listen"'
+tmux new-session -d -s mysession 'bash -c "su u; https://github.com/MMqd/kandinsky-for-automatic1111/webui.sh --listen"'
