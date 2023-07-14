@@ -6,4 +6,9 @@ cd /workspace
 adduser --disabled-password --gecos "" u
 chown u:u -R /workspace
 
-tmux new-session -d -s mysession
+git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
+
+cd /workspace/stable-diffusion-webui/extensions
+git clone https://github.com/MMqd/kandinsky-for-automatic1111
+
+tmux new-session -d -s mysession 'bash -c "https://github.com/MMqd/kandinsky-for-automatic1111/webui.sh --listen"'
