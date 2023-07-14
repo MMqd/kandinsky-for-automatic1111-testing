@@ -30,4 +30,4 @@ clone_or_pull "kandinsky-for-automatic1111" \
              "main"
 
 tmux kill-session -t mysession 2>/dev/null
-tmux new-session -d -s mysession 'bash -c "su u; https://github.com/MMqd/kandinsky-for-automatic1111/webui.sh --listen"'
+tmux new-session -d -s mysession 'bash -c "su u; https://github.com/MMqd/kandinsky-for-automatic1111/webui.sh --listen --skip-torch-cuda-test"'
