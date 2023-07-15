@@ -2,10 +2,10 @@
 Scripts used to test the kandinsky-for-automatic1111 extension
 
 To run installer:
-`wget --no-cache -O - https://raw.githubusercontent.com/MMqd/kandinsky-for-automatic1111-testing/main/configure_pod.sh | bash`
+`wget -O - https://raw.githubusercontent.com/MMqd/kandinsky-for-automatic1111-testing/main/configure_pod.sh | bash`
 
 To run the tests:
-`wget --no-cache -O - https://raw.githubusercontent.com/MMqd/kandinsky-for-automatic1111-testing/main/tests.py | python`
+`wget -O - https://raw.githubusercontent.com/MMqd/kandinsky-for-automatic1111-testing/main/tests.py | python`
 
 # Recommended Pod Configuration
 * container disk: 20 GB
