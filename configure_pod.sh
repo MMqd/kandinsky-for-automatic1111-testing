@@ -22,7 +22,7 @@ clone_or_pull() {
 cd /workspace
 clone_or_pull "stable-diffusion-webui" \
              "https://github.com/AUTOMATIC1111/stable-diffusion-webui" \
-             "main"
+             "master"
 
 if [ -d "/workspace/stable-diffusion-webui/extensions" ]; then
   cd /workspace/stable-diffusion-webui/extensions
