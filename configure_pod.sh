@@ -1,7 +1,7 @@
 apt-get update
 apt-get --fix-broken install -y
 apt-get upgrade -y
-apt-get install -y vim tmux python3-venv libgoogle-perftools4 libtcmalloc-minimal4
+apt-get install -y vim tmux python3-venv libgoogle-perftools4 libtcmalloc-minimal4 sudo
 adduser --disabled-password --gecos "" u
 chown u:u -R /workspace
 git config --global --add safe.directory *
