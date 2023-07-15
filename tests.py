@@ -10,5 +10,6 @@ api = webuiapi.WebUIApi(host='127.0.0.1', port=7860)
 result1 = api.txt2img(prompt="cute squirrel",
                     negative_prompt="ugly, out of frame",
                     seed=0,
+                    save_images=True,
                     cfg_scale=7,
                     )
