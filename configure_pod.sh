@@ -24,9 +24,8 @@ clone_or_pull "stable-diffusion-webui" \
              "https://github.com/AUTOMATIC1111/stable-diffusion-webui" \
              "main"
 
-cd /workspace/stable-diffusion-webui/extensions
-
 if [ -d "/workspace/stable-diffusion-webui/extensions" ]; then
+  cd /workspace/stable-diffusion-webui/extensions
   clone_or_pull "kandinsky-for-automatic1111" \
                "https://github.com/MMqd/kandinsky-for-automatic1111" \
                "main"
