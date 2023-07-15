@@ -44,4 +44,4 @@ else
 fi
 
 tmux kill-session -t mysession 2>/dev/null
-sudo -u u tmux new-session -d -s mysession 'bash -c "/workspace/$UI_NAME/webui.sh --listen --skip-torch-cuda-test"'
+sudo -u u tmux new-session -d -s mysession 'bash -c "/workspace/$UI_NAME/webui.sh --listen"' # --skip-torch-cuda-test
