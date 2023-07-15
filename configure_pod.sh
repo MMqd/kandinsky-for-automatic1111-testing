@@ -24,12 +24,12 @@ clone_or_pull() {
 cd /workspace
 
 if [ $UI_NAME == "automatic" ]; then
-  clone_or_pull "stable-diffusion-webui" \
-               "https://github.com/AUTOMATIC1111/stable-diffusion-webui" \
-               "master"
-else
   clone_or_pull "automatic" \
                "https://github.com/vladmandic/automatic" \
+               "master"
+else
+  clone_or_pull "stable-diffusion-webui" \
+               "https://github.com/AUTOMATIC1111/stable-diffusion-webui" \
                "master"
 fi
 
