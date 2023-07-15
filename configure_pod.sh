@@ -39,6 +39,12 @@ if [ -d "/workspace/stable-diffusion-webui/extensions" ]; then
   clone_or_pull "kandinsky-for-automatic1111" \
                "https://github.com/MMqd/kandinsky-for-automatic1111" \
                "main"
+               
+  if [ $UI_NAME != "automatic" ]; then
+    clone_or_pull "stable-diffusion-webui-images-browser" \
+                 "https://github.com/AlUlkesh/stable-diffusion-webui-images-browser" \
+                 "main"
+  fi
 else
   echo -e "\033[1;31mno webui directory found\033[0m"
 fi
