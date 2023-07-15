@@ -1,6 +1,6 @@
 import requests 
 
-url = 'http://0.0.0.0:7860'
+url = 'http://localhost:7860'
 
 payload = {
   'prompt': 'a cute puppy',
