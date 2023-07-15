@@ -43,5 +43,5 @@ else
   echo -e "\033[1;31mno webui directory found\033[0m"
 fi
 
-tmux kill-session -t mysession 2>/dev/null
-sudo -u u tmux new-session -d -s mysession 'bash -c "/workspace/$UI_NAME/webui.sh --listen"' # --skip-torch-cuda-test
+#tmux kill-session -t mysession 2>/dev/null
+#sudo -u u tmux new-session -d -s mysession 'bash -c "/workspace/$UI_NAME/webui.sh --listen"' # --skip-torch-cuda-test
