@@ -32,6 +32,6 @@ if [ -d "/workspace/stable-diffusion-webui/extensions" ]; then
 else
   echo -e "\033[1;31mno webui directory found\033[0m"
 fi
-
+yy
 tmux kill-session -t mysession 2>/dev/null
-tmux new-session -d -s mysession 'bash -c "su u; /workspace/stable-diffusion-webui/webui.sh --listen --skip-torch-cuda-test"'
+sudo -u u tmux new-session -d -s mysession 'bash -c "/workspace/stable-diffusion-webui/webui.sh --listen --skip-torch-cuda-test"'
