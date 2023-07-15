@@ -10,5 +10,5 @@ To run the tests:
 # Recommended Pod Configuration
 * container disk: 20 GB
 * volume disk: 100 GB
-* Expose HTTP Ports: 8888,7860
+* Expose HTTP Ports: 7860
 * \>1 GPU to unlock >512 MB RAM
