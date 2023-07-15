@@ -6,7 +6,8 @@ adduser --disabled-password --gecos "" u
 chown u:u -R /workspace
 git config --global --add safe.directory *
 
-UI_NAME="automatic"
+UI_NAME="stable-diffusion-webui"
+# automatic or stable-diffusion-webui
 
 clone_or_pull() {
   local dir=$1
