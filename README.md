@@ -6,3 +6,8 @@ To run installer:
 
 To run the tests:
 `wget -O - https://raw.githubusercontent.com/MMqd/kandinsky-for-automatic1111-testing/main/tests.py | python`
+
+# Recommended Pod Configuration
+* container disk: 20
+* volume disk: 100
+* Expose HTTP Ports: 8888,7860
