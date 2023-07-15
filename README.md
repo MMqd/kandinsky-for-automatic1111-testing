@@ -11,3 +11,4 @@ To run the tests:
 * container disk: 20 GB
 * volume disk: 100 GB
 * Expose HTTP Ports: 8888,7860
+* >1 GPU to unlock >512 MB RAM
