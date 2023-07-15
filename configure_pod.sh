@@ -29,6 +29,8 @@ if [ -d "/workspace/stable-diffusion-webui/extensions" ]; then
   clone_or_pull "kandinsky-for-automatic1111" \
                "https://github.com/MMqd/kandinsky-for-automatic1111" \
                "main"
+else
+  echo -e "\033[1;31mno webui directory found\033[0m"
 fi
 
 tmux kill-session -t mysession 2>/dev/null
